@@ -2,12 +2,13 @@ require_relative 'contact'
 require 'sinatra'
 
 get '/' do
-  @contact_link = "localhost:4567/contacts"
+  redirect to ('/contacts')
   erb :index
 end
 
 get '/contacts' do
   @contacts = Contact.all
+
   erb :contacts
 end
 

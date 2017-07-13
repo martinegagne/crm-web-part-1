@@ -1,7 +1,15 @@
-<h1>Contacts</h1>
+<div class="contact_container">
 
-<ul>
- <% @contacts.each do |contact| %>
-    <li>Name: <%=contact.full_name%> Email: <%=contact.email%> Notes: <%=contact.note%> </li>
- <%end%>
-</ul>
+  <div class="contact_ticker">
+    <p>There are <u>5</u> contacts</p>
+  </div>
+
+  <ul>
+   <% @contacts.each do |contact| %>
+      <li class = "contact_item">Name: <%="#{contact.first_name}"%> <%="#{contact.last_name}"%> (Email: <%="#{contact.email}"%>)
+        <p><a href="...">Edit</a> | <a href="...">Delete</a></p>
+      </li>
+   <%end%>
+  </ul>
+
+</div>
