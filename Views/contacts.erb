@@ -6,8 +6,8 @@
 
   <ul>
    <% @contacts.each do |contact| %>
-      <li class = "contact_item">Name: <%="#{contact.first_name}"%> <%="#{contact.last_name}"%> (Email: <%="#{contact.email}"%>)
-        <p><a href="...">Edit</a> | <a href="...">Delete</a></p>
+      <li class = "contact_item"><%="#{contact.first_name}"%> <%="#{contact.last_name}"%> (<%="#{contact.email}"%>)
+        <p><a class="edit_delete" href="...">Edit</a> | <a class="edit_delete" href="...">Delete</a></p>
       </li>
    <%end%>
   </ul>

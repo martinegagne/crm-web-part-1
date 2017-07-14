@@ -75,9 +75,9 @@ ul {
   font-size: 20px;
 }
 
-.class_container {
-  margin-left: 30px;
-  margin-right: 30px;
+main {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .contact_ticker {
@@ -104,10 +104,14 @@ u {
   font-weight: bolder;
 }
 
+.edit_delete {
+  font-size: 15px;
+}
+
 footer {
   background-color: #000000;
   color: #FFFFFF;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   font-size: 15px;
 }
