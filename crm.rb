@@ -34,6 +34,9 @@ get '/contacts/:id' do
   erb :show_contact
 end
 
+post '/contacts' do
+  puts params
+end
 
 after do
   ActiveRecord::Base.connection.close
