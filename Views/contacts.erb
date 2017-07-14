@@ -1,12 +1,14 @@
 <div class="contact_container">
 
   <div class="contact_ticker">
-    <p>There are <u>5</u> contacts</p>
+    <p>There are <strong>5</strong> contacts</p>
   </div>
 
   <ul>
    <% @contacts.each do |contact| %>
-      <li class = "contact_item"><%="#{contact.first_name}"%> <%="#{contact.last_name}"%> (<%="#{contact.email}"%>)
+      <li class = "contact_item">
+        <a href="/contacts/<%= contact.id%>"> <%="#{contact.first_name}"%> <%="#{contact.last_name}"%> (<%="#{contact.email}"%>)</a>
+
         <p><a class="edit_delete" href="...">Edit</a> | <a class="edit_delete" href="...">Delete</a></p>
       </li>
    <%end%>

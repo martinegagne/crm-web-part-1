@@ -71,8 +71,13 @@ ul {
   width: 100%;
   padding: 12px;
   margin-top: 1px;
-  list-style: none;
+}
+
+.nav_item a {
   font-size: 20px;
+  color: white;
+  list-style: none;
+  text-decoration: none;
 }
 
 main {
@@ -83,13 +88,13 @@ main {
 .contact_ticker {
   background-color: #FF7661;
   color: black;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
   font-weight: bold;
   font-size: 20px;
 }
 
-u {
+strong {
   text-decoration: #D3D3D3 underline;
   font-weight: bolder;
 }
@@ -101,7 +106,7 @@ u {
   padding: 20px;
   list-style: none;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .edit_delete {
