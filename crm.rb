@@ -18,6 +18,10 @@ get '/about' do
   erb :about
 end
 
+get '/contacts/new' do
+  erb :new
+end
+
 get '/contacts/:id' do
   @contact = Contact.find_by({id: params[:id].to_i})
 
@@ -29,6 +33,7 @@ get '/contacts/:id' do
 
   erb :show_contact
 end
+
 
 after do
   ActiveRecord::Base.connection.close
