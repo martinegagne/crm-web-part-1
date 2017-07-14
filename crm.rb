@@ -53,6 +53,8 @@ get '/contacts/:id/edit' do
   end
 end
 
+
+
 after do
   ActiveRecord::Base.connection.close
 end
