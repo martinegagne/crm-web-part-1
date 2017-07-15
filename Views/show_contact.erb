@@ -1,8 +1,22 @@
-  <ul>
+<div class="contact">
+<h1>Contact</h1>
 
-    <li><p><%= @contact.first_name %><p></li>
-    <li><p><%= @contact.last_name %><p></li>
+  <ul>
+    <li><p><%= @contact.first_name.capitalize %><p></li>
+    <li><p><%= @contact.last_name.capitalize %><p></li>
     <li><p><%= @contact.email %><p></li>
     <li><p><%= @contact.note %><p></li>
-
   </ul>
+</div>
+
+  <div class="delete_contact">
+      <form action='/contacts/<%= @contact.id %>' method='post'>
+        <input type='hidden' name='_method' value='delete'>
+        <input type='submit' value='Delete Contact'>
+      </form>
+    </div>
+
+    <div class="edit_contact">
+        <a href="/contacts/<%= @contact.id %>/edit"> Edit </a>
+        <a href="/contacts">Back to Contacts</a>
+    </div>

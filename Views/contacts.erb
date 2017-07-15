@@ -1,7 +1,7 @@
 <div class="contact_container">
 
   <div class="contact_ticker">
-    <p>There are <strong>5</strong> contacts</p>
+    <p>There are <strong><%=@contacts.count%></strong> contacts</p>
   </div>
 
   <ul>
@@ -9,7 +9,7 @@
       <li class = "contact_item">
         <a href="/contacts/<%= contact.id%>"> <%="#{contact.first_name}"%> <%="#{contact.last_name}"%> (<%="#{contact.email}"%>)</a>
 
-        <p><a class="edit_delete" href="/contacts/<%= contact.id %>/edit">Edit</a> | <a class="edit_delete" href="...">Delete</a></p>
+        <p><a class="edit_delete" href="/contacts/<%= contact.id %>/edit">Edit</a> | <a class="edit_delete" href="/contacts/<%=contact.id%>/delete">Delete</a></p>
       </li>
    <%end%>
   </ul>
